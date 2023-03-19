@@ -10,6 +10,6 @@ if v1 > v2:
     print("primeiro é maior")
 if v1 == v2:
         print("numeros iguais! ")
-if v1 < v2:
+else:
     print("segundo maior! ")
 
