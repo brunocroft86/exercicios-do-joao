@@ -15,7 +15,7 @@ def leiaint(msg):
     return valor
 
 n = leiaint('Digite um número: ')
-print(f'Você acabou de digitar o número {n} e seu antecessor é {n-1}.')
+print(f'Você acabou de digitar o número {n}, e seu antecessor é {n-1}.')
 
 
 
