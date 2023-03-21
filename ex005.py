@@ -1,5 +1,22 @@
-#5) Escreva um algoritmo para ler um valor (do teclado) e escrever (na tela) o seu antecessor
+#5) Escreva um algoritmo para ler um número inteiro (do teclado) e escrever (na tela) o seu antecessor
 
-v = int(input('Digite um valor: '))
-a = v - 1
-print(f'O valor digitado foi {v},\ne o seu antecessor é {a}.')
+def leiaint(msg):
+    ok = False
+    valor = 0
+    while True:
+        n = str(input(msg))
+        if n.isnumeric():
+            valor = int(n)
+            ok = True
+        else:
+            print('\033[0;31mERRO! Digite um número válido.\033[m')
+        if ok:
+            break
+    return valor
+
+n = leiaint('Digite um número: ')
+print(f'Você acabou de digitar o número {n} e seu antecessor é {n-1}')
+
+
+
+
