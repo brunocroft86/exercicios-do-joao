@@ -2,15 +2,22 @@
 #brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total
 #de eleitores
 
-eleitores = float(input('Qual foi o total de eleitores? '))
-brancos = float(input('Total de votos em branco? '))
-nulos = float(input('Total votos nulos? '))
-invalidos = float(input('Total de votos inválidos?'))
 
-pbranco = brancos * 100 / eleitores
-pnulos = nulos * 100 / eleitores
-pinvalidos = invalidos -(brancos + nulos)
-print(f'\nO total de eleitores do municipio é {eleitores}%'
-      f'\no total de votos em branco é {pbranco}%'
-      f'\no tatal de votos nulos é {pnulos}%'
-      f'\no total de votos inválidos é {pinvalidos}%')
+
+total_eleitores = float(input('Total de eleitores da cidade? '))
+total_votos_brancos = float(input('Total de fotos em brancos? '))
+total_votos_nulos = float(input('Total de fotos nulos? '))
+total_votos_validos = float(input('Total de votos válidos? '))
+brancos = (100*total_votos_brancos)/total_eleitores
+nulos = (100*total_votos_nulos)/total_eleitores
+validos = (100*total_votos_validos)/total_eleitores
+
+print(f'Porcentagem de votos brancos é de: {brancos:.2f}%')
+
+print(f'Porcentagem de votos nulos é de: {nulos:.2f}%')
+
+print(f'Porcentagem de votos validos é de: {validos:.2f}%')
+
+
+
+
