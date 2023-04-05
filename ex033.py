@@ -6,10 +6,10 @@
 v1 = int(input('Digite o primeiro valor: '))
 v2 = int(input("Digite o segundo valor: "))
 
-if v1 > v2:
-    print("primeiro é maior")
 if v1 == v2:
         print("numeros iguais! ")
-else:
+if v1 > v2:
+    print("primeiro é maior")
+if v2 > v1:
     print("segundo maior! ")
 
