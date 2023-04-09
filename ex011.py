@@ -6,8 +6,19 @@
 
 
 salario_fixo = float(input('Qual o seu salário fixo? R$: '))
-carros_vendidos = int (input('Quantos carros você vendeu?'))
-porcarvend = carros_vendidos + (5*100)
-total_vendas = salario_fixo + porcarvend
-salario_final = total_vendas
-print(f'O salário final foi de R$: {salario_final:.2f}')
+valorComissaoFixa = float(input('Qual o valor da comissão fixa por carro? '))
+qntCarrosVendidos = int(input('Quantos carros você vendeu? '))
+valorCarro = float(input('Quanto custa o carro? '))
+
+porcentagemComissaoExtra = 0.05
+
+valorTotalVendasSemComissao = qntCarrosVendidos*valorCarro
+valorTotalComissaoFixa = qntCarrosVendidos * valorComissaoFixa
+valorTotalComissaoExtra = valorTotalVendasSemComissao * porcentagemComissaoExtra
+valorTotalComissao = valorTotalComissaoFixa + valorTotalComissaoExtra
+valorTotalVendasComComissao = valorTotalVendasSemComissao + valorTotalComissao
+salarioFinal = valorTotalVendasComComissao + salario_fixo
+print(f'Parabéns vc tá fudido e vai receber um salário de R${salarioFinal:.2f}')
+
+
+
