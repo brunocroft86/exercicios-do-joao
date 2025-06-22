@@ -3,5 +3,5 @@
 
 base = float(input('Digite a base do retângulo: '))
 altura = float(input('Digite a altura do retângulo: '))
-retângulo = base*altura
+retangulo = base*altura
 print(f'A dimensão do retângulo é {retângulo}. ')
