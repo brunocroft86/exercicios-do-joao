@@ -1,0 +1,3 @@
+# Referência
+
+[Lista de exercícios](https://fit.faccat.br/~fpereira/apostilas/exerc_resp_alg_mar2007.pdf)
